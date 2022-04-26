@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { 
     listagem_footer_empresa, listagem_footer_comunidade, listagem_footer_links_uteis,
-    listagem_icones,
+    listagem_icones, listagem_footer_inferior, listagem_footer_inferior_adicional,
 } from "../../data/menu";
 
 function Footer(){
@@ -13,6 +13,8 @@ function Footer(){
     const [footerComunidade, setFooterComunidade] = useState(listagem_footer_comunidade);
     const [footerLinksUteis, setFooterLinksUteis] = useState(listagem_footer_links_uteis);
     const [footerIcones, setFooterIcones] = useState(listagem_icones);
+    const [footerInferiorEsquerdo, setFooterInferiorEsquerdo] = useState(listagem_footer_inferior);
+    const [footerInferiorDireito, setFooterInferiorDireito] = useState(listagem_footer_inferior_adicional);
 
     return(
         <C.Rodape>
@@ -58,6 +60,24 @@ function Footer(){
                     </C.IconesUl>
                 </C.Colunas>
             </C.FooterSuperior>
+            
+            <C.FooterInferior>
+                <C.ColunasInferior>
+                    <C.ColunasInferiorUl>
+                        {footerInferiorEsquerdo.map((footer_inferior, index) => (
+                            <C.ColunasInferiorLi key={index}>{footer_inferior.lista}</C.ColunasInferiorLi>
+                        ))}
+                    </C.ColunasInferiorUl>
+                </C.ColunasInferior>
+
+                <C.ColunasInferior>
+                    <C.ColunasInferiorUl display="">
+                        {footerInferiorDireito.map((footer_direito, index) => (
+                            <C.ColunasInferiorLi key={index}>{footer_direito.lista}</C.ColunasInferiorLi>
+                        ))}
+                    </C.ColunasInferiorUl>
+                </C.ColunasInferior>
+            </C.FooterInferior>
         </C.Rodape>
     );
 }

@@ -26,3 +26,12 @@ export const listagem_icones: lista_footer[] = [
     { lista: "fa-2x fa fa-instagram" }, { lista: "fa-2x fa fa-twitter" },
     { lista: "fa-2x fa fa-facebook" }
 ]
+
+export const listagem_footer_inferior: lista_footer[] = [
+    { lista: "Legal" }, { lista: "Centro de privacidade" }, { lista: "Política de Privacidade" },
+    { lista: "Cookies" }, { lista: "Sobre anúncios" }
+]
+
+export const listagem_footer_inferior_adicional: lista_footer[] = [
+    { lista: "Brasil" }, { lista: "2022 Spotify AB" }
+]
