@@ -23,6 +23,18 @@ export const NavMenu = styled.div``;
 export const NavMenuUl = styled.ul`
     display: flex; list-style: none; font-weight: bold;
     margin-right: 100px;
+
+    @media(max-width: 570px){
+        display: grid; grid-template-columns: repeat(3, 1fr);
+
+        li{
+            margin: 5px 0px 5px 0px;
+        }
+    }
+
+    @media(max-width: 338px){
+        display: grid; grid-template-columns: repeat(1, 1fr); 
+    }
 `;
 export const NavMenuLi = styled.li<{ cor?: string, cursor?: string, }>`
     a{

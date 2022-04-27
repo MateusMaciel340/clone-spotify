@@ -53,7 +53,7 @@ function Footer(){
                 <C.Colunas>
                     <C.IconesUl>
                         {footerIcones.map((icones, index) => (
-                            <C.IconesLi>
+                            <C.IconesLi key={index}>
                                 <C.Icone className={icones.lista}/>
                             </C.IconesLi>
                         ))}
