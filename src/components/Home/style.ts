@@ -29,21 +29,23 @@ export const TextoPequeno = styled.h3`
     text-transform: uppercase; font-size: 16px;
 `;
 
-export const TextoPrincipal = styled.h1`
-    font-size: 60px;
+export const TextoPrincipal = styled.h1<{ tamanho_titulo?: string, }>`
+    font-size: ${props => props.tamanho_titulo ?? "60px"};
 `;
-export const TextoParagrafo = styled.p`
-    font-size: 24px; font-weight: bold;
+export const TextoParagrafo = styled.p<{ tamanho_paragrafo?: string, }>`
+    font-weight: bold;
+    font-size: ${props => props.tamanho_paragrafo ?? "24px"};
 `;
 
 export const TextoMini = styled.p`
     font-size: 13px;
 `;
 
-export const BotaoHome = styled.button<{ fundo?: string, cor?: string,  }>`
-    background-color: ${props => props.fundo ?? "#000000"}; border: none; 
-    padding: 18px 25px 18px 25px; font-size: 14px; text-transform: uppercase; font-weight: bold; border-radius: 30px;
-    margin: 20px 0px 20px 0px; color: ${props => props.cor ?? "#FFFFFF"};
+export const BotaoHome = styled.button<{ fundo?: string, cor?: string, borda?: string,  }>`
+    background-color: ${props => props.fundo ?? "#000000"}; 
+    padding: 18px 25px 18px 25px; font-size: 14px; text-transform: uppercase; font-weight: bold; border-radius: 30px; cursor: pointer;
+    margin: 20px 10px 20px 0px; color: ${props => props.cor ?? "#FFFFFF"};
+    border: 2px solid ${props => props.borda ?? "none"};
 `;
 
 export const HomeImagem = styled.img`
