@@ -29,11 +29,12 @@ export const TextoPequeno = styled.h3`
     text-transform: uppercase; font-size: 16px;
 `;
 
-export const TextoPrincipal = styled.h1<{ tamanho_titulo?: string, }>`
+export const TextoPrincipal = styled.h1<{ tamanho_titulo?: string, tipo_titulo?: string, }>`
     font-size: ${props => props.tamanho_titulo ?? "60px"};
+    text-align: ${props => props.tipo_titulo ?? ""};
 `;
-export const TextoParagrafo = styled.p<{ tamanho_paragrafo?: string, }>`
-    font-weight: bold;
+export const TextoParagrafo = styled.p<{ tamanho_paragrafo?: string, negrito?: string }>`
+    font-weight: ${props => props.negrito ?? "bold"};
     font-size: ${props => props.tamanho_paragrafo ?? "24px"};
 `;
 
@@ -48,7 +49,9 @@ export const BotaoHome = styled.button<{ fundo?: string, cor?: string, borda?: s
     border: 2px solid ${props => props.borda ?? "none"};
 `;
 
-export const HomeImagem = styled.img`
+export const HomeImagem = styled.img<{ width?: string, }>`
+    width: ${props => props.width ?? ""};
+
     @media(max-width: 427px){
         width: 100%;
     }

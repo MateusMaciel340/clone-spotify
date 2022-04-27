@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 
 // Pages 
 import Inicial from "../pages";
+import Premium from "../pages/premium";
 
 function Rotas(){
     return(
@@ -13,6 +14,7 @@ function Rotas(){
             <Header/>
             <Routes>
                 <Route path="/" element={<Inicial/>}/>
+                <Route path="/premium" element={<Premium/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
