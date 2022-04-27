@@ -18,7 +18,7 @@ function Inicial(){
                             <C.TextoPequeno>{listagem_home_superior.titulo_pequeno}</C.TextoPequeno>
                             <C.TextoPrincipal>{listagem_home_superior.titulo}</C.TextoPrincipal>
                             <C.TextoParagrafo>{listagem_home_superior.paragrafo}</C.TextoParagrafo>
-                            <C.BotaoHome>{listagem_home_superior.texto_botao}</C.BotaoHome>
+                            <C.BotaoHome borda="#000000">{listagem_home_superior.texto_botao}</C.BotaoHome>
                             <C.TextoMini>{listagem_home_superior.texto_mini}</C.TextoMini>
                         </C.Coluna>
                         ):""))}
@@ -37,7 +37,7 @@ function Inicial(){
                             <C.TextoPequeno>{listagem_home_superior.titulo_pequeno}</C.TextoPequeno>
                             <C.TextoPrincipal>{listagem_home_superior.titulo}</C.TextoPrincipal>
                             <C.TextoParagrafo>{listagem_home_superior.paragrafo}</C.TextoParagrafo>
-                            <C.BotaoHome fundo="#1ed760" cor="#2941AB">{listagem_home_superior.texto_botao}</C.BotaoHome>
+                            <C.BotaoHome fundo="#1ed760" borda="#1ed760" cor="#2941AB">{listagem_home_superior.texto_botao}</C.BotaoHome>
                         </C.Coluna>
                         ): ""
                     ))}
