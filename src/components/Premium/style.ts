@@ -35,6 +35,30 @@ export const GrupoInformacoes = styled.div`
         grid-template-columns: repeat(1, 1fr);
     }
 `;
-export const Informacoes = styled.div`
-    text-align: center; margin: 20px 0px 40px 0px;
+export const Informacoes = styled.div<{ tipo?: string, }>`
+    text-align: ${props => props.tipo ?? "center"}; margin: 20px 0px 40px 0px;
+`;
+
+// Escolha seu plano Premium
+export const PlanosCard = styled.div`
+    background-color: #FFFFFF; padding: 10px; border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); margin-right: 20px;
+`;
+
+export const SelecaoAssinatura = styled.div`
+    background-color: #2E77D0; color: #FFFFFF; width: 90%;
+    padding: 5px 5px 5px 5px; font-weight: bold; border-radius: 5px;
+    font-size: 15px;
+`;
+
+export const CardLinha = styled.hr`
+    margin: 80px 0px 0px 0px;
+    border: 0.5px solid #787878;
+`;
+
+export const CardUl = styled.ul`
+    margin: 15px 0px 150px 0px;
+`;
+export const CardLi = styled.li`
+    margin: 10px 0px 10px 0px; font-size: 18px;
 `;
