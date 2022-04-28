@@ -35,3 +35,14 @@ export const listagem_footer_inferior: lista_footer[] = [
 export const listagem_footer_inferior_adicional: lista_footer[] = [
     { lista: "Brasil" }, { lista: "2022 Spotify AB" }
 ]
+
+export const listar_titulo_suporte: lista_footer[] = [
+    { lista: "Ajuda com pagamentos" }, { lista: "Ajuda com o plano" }, { lista: "Ajuda com o app" },
+    { lista: "Ajuda com dispositivos" }, { lista: "Privacidade e Dados" },
+    { lista: "Ajuda com a conta" }
+]
+
+export const listar_pontos_suporte: lista_footer[] = [
+    { lista: "Planos disponíveis" }, { lista: "Preferências do plano" }, 
+    { lista: "Premium Família e Kids" }, { lista: "Premium Universitário" }
+]
