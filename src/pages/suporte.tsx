@@ -23,6 +23,14 @@ function Suporte(){
                     </C.CamadaCentral>
             </C.CorpoSuporte>
         </C.CorpoCentral>
+
+        <C.CorpoCentral fundo="" tipo="center">
+            <C.CorpoSuporte fundo="">
+                <Home.TextoPrincipal tamanho_titulo="48px">Visite a Comunidade</Home.TextoPrincipal>
+                <Home.TextoParagrafo tamanho_paragrafo="18px" negrito="">Tem uma pergunta? Encontre respostas na nossa Comunidade de fãs especialistas do mundo todo!</Home.TextoParagrafo>
+                <Home.BotaoHome fundo="#1FDF64" borda="#1FDF64" cor="#000000">Encontrar respostas</Home.BotaoHome>
+            </C.CorpoSuporte>
+        </C.CorpoCentral>
         </>
     );
 }

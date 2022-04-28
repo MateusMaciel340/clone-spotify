@@ -43,12 +43,14 @@ export const TextoMini = styled.p`
     font-size: 13px;
 `;
 
-export const BotaoHome = styled.button<{ fundo?: string, cor?: string, borda?: string, width?: string,  }>`
+export const BotaoHome = styled.button<{ fundo?: string, cor?: string, borda?: string, width?: string, negrito?: string  }>`
     background-color: ${props => props.fundo ?? "#000000"}; 
-    padding: 18px 25px 18px 25px; font-size: 14px; text-transform: uppercase; font-weight: bold; border-radius: 30px; cursor: pointer;
+    padding: 18px 25px 18px 25px; font-size: 14px;
+    border-radius: 30px; cursor: pointer; font-weight: ${props => props.negrito ?? "bold"}; 
     margin: 20px 10px 20px 0px; color: ${props => props.cor ?? "#FFFFFF"};
     border: 2px solid ${props => props.borda ?? "none"};
     width: ${props => props.width ?? ""};
+    text-transform: uppercase;
 `;
 
 export const HomeImagem = styled.img<{ width?: string, }>`

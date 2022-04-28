@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const CorpoSuporte = styled.div`
+export const CorpoSuporte = styled.div<{ fundo?: string, }>`
     max-width: 1200px; margin: 0 auto;
-    background-color: #EEEEEE; padding: 10px;
+    background-color: ${props => props.fundo ?? "#EEEEEE"}; padding: 10px;
 `;
 
-export const CorpoCentral = styled.div`
-    background-color: #EEEEEE;
+export const CorpoCentral = styled.div<{ fundo?: string, tipo?: string, }>`
+    background-color: ${props => props.fundo ?? "#EEEEEE"};
     padding-top: 40px; padding-bottom: 40px;
+    text-align: ${props => props.tipo ?? ""};
 `;
 
 export const CamadaCentral = styled.div`
@@ -38,4 +39,8 @@ export const SuporteLi = styled.li`
     &:hover{
         text-decoration: underline;
     }
+`;
+
+export const AgrupamentoCentralizado = styled.div`
+    display: grid; grid-template-columns: repeat(3, 1fr);
 `;
